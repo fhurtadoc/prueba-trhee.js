@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+:root {
+     --bg-color: #040e25 ;
+     --lyrics-color: #d2d6de ;
+     --title-color: #EEECE1;
+     --efectos-color1:#b8dce8;
+     --efectos-color2:#3e94e4 ;
+  }
+  
+
+
+.container{
+    position: absolute;
+    display: block;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container a {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background-color: white;
+    margin: 20px; 
+    color: var(--title-color); 
+    font-family: serif  
+}
+
+.container a:before,
+.container a:after
+{
+    content: '' ;
+    position: absolute;
+    inset: 0;
+    background-color:#ffb48a ;
+    transition: 0.5s;
+}
+
+.container a:nth-child(1):before,
+.container a:nth-child(1):after{
+    background: linear-gradient(45deg, var(--efectos-color1), var(--bg-color), var(--bg-color), var(--efectos-color2) );
+}
+
+.container a:hover::before
+{
+    inset: -3px;
+
+}
+
+.container a:hover::after
+{
+    inset: -3px;
+    filter: blur(10px);
+    
+}
+
+.container a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color:var(--bg-color);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    border: 1px solid,  #2a0000;
+}
+
+.container h1 {
+    color: var(--efectos-color1);
+    font-size: 400%;
+    font-family: serif;
+    mix-blend-mode: multiply;
+    background: linear-gradient(#3e94e4, #040e25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
