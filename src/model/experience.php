@@ -18,8 +18,9 @@ class Experience  implements Object_inter {
         $this.$tecnologias=$tecnologias;
 
     }
-
     
+
+
 
 
 }
