@@ -207,7 +207,7 @@
         
       </script>
     <div class="container">          
-        <a href="#">
+        <a href="./home.php">
             <span>Entrar</span>
         </a>
         <H1>ALEJO HURTADO</H1>

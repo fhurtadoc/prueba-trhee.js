@@ -1,0 +1,507 @@
+@font-face{
+font-family: "OswaldLight";
+src: url("../fonts/oswald-light.ttf"), 
+url("../fonts/oswald-light.eot"), 
+url("../fonts/oswald-light.woff"), 
+url("../fonts/oswald-light.woff2"), 
+url("../fonts/oswald-light.svg");
+}
+[class^="ti-"], [class*=" ti-"] {
+font-family: 'themify';
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+font-family: 'themify';
+/*../font/fonts/themify.eot?-fvbane*/
+src:url('../fonts/fonts/themify.eot?-fvbane');
+src:url('../fonts/fonts/themify.eot?#iefix-fvbane') format('embedded-opentype'),
+    url('../fonts/fonts/themify.woff?-fvbane') format('woff'),
+    url('../fonts/fonts/themify.ttf?-fvbane') format('truetype'),
+    url('../fonts/fonts/themify.svg?-fvbane#themify') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+*{
+font-family:"OswaldLight";
+}
+:root{
+--fuerte: #040e25;
+--suave: #3e94e4;
+--blnco: #b8dce8;
+
+}
+
+
+html, body {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+}
+section {
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+}
+.parallax{
+background-color: ·fff;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position-x: 50%;
+background-position-y: 50%;
+background-size: cover;
+}
+#seccion1{
+background-image: url('../estatics/img/medir-la-productividad-1024x576.jpg');
+backdrop-filter: brightness(40%);
+}
+
+
+#vid{
+position: relative;    
+height: 75vh;
+min-height: 25rem;
+width: 100%;
+overflow: hidden;
+}
+.menu{
+width: 100%;
+height: 50px;    
+background-color: var(--blnco);    
+}
+
+.menu btn-menu{
+visibility: hidden;
+}
+.menu label{
+display: none;
+width: 30px;
+height: 30px;
+padding: 10px;
+border-right: 1px solid #fff;
+}
+
+.menu nav ul {
+display: flex;
+list-style: none;
+text-align: center;
+margin-left: 50%;
+}
+.menu nav ul li{
+margin-right: 50px;
+margin-top: 10px;
+}
+.menu nav ul li a {
+text-decoration: none;
+color: var(--fuerte);
+}
+.continer h1{
+font-size: 50px;
+position: absolute;    
+margin-left: 25%;
+margin-top: 10%;    
+}
+.continer p {
+position: absolute;    
+margin-left: 25%;
+margin-top: 15%; 
+
+}
+#seccion2{
+background-color:var(--fuerte);
+height: 500px;
+}
+
+#card-sobremi{
+position: absolute;
+margin-left: 30%;
+width: 35%;     
+margin-top: 30px;
+background-color: rgba(255, 211, 255, 0);    
+border-radius: 23% 8% !important;
+border-color: var(--suave);
+
+}
+#card-sobremi p{
+color: var(--blnco);
+text-align: justify;
+}
+
+#card-sobremi h5{
+color: var(--blnco);
+text-align: center;
+
+}
+#seccion2 .card img{
+width: 25%;
+
+}
+.tecnologias{
+width: 5% !important;
+height: 5%;
+filter: grayscale(60%);
+}
+
+#logos{
+display: flex;
+
+}
+#logos img{
+margin-left: 5%;
+color:green; 
+font:40px Impact;    
+
+}
+.string{
+float: left;
+margin-left: 25px;
+}
+
+.tecnologias:hover {
+-webkit-filter: grayscale(0);
+filter: grayscale(0);
+}
+
+#seccion3{
+background-color: var(--suave);
+}
+#continer-proyectos{
+display: flex;
+justify-content: center;
+align-items:center;
+height: 100vh;
+}
+#titulo-proyectos{
+text-align: center;
+padding-top: 20px;
+color: var(--blnco);
+}
+
+#continer-proyectos figure{
+position: relative;
+height: 250px;
+width: 350px;
+overflow: hidden;
+border-radius: 6px;
+box-shadow: 0px 15px 25px rgba(14, 49, 134, 0.44);
+cursor: pointer;
+margin-left: 5%;
+}
+
+#continer-proyectos figure img{
+width: 100%;
+height: 100%;
+transition: all 500ms ease-out;
+}
+#continer-proyectos .capa{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background:rgba(14, 49, 134, 0.44);
+transition:all 500ms ease-out;
+opacity: 0;
+visibility: hidden;
+text-align: center;
+
+}
+
+
+#continer-proyectos figure:hover > .capa{
+opacity: 1;
+visibility: visible;
+}
+
+#continer-proyectos figure:hover >img{
+transform: scale(1.3);
+}
+#continer-proyectos figure:hover > .capa h3{
+margin-top:70px;
+margin-bottom: 15px;
+}
+#continer-proyectos figure .capa h3{
+color: var(--blnco);
+font-weight: 400;
+margin-bottom: 120px;
+transition:all 500ms ease-out;
+margin-top: 30px;
+}
+#continer-proyectos figure .capa p{
+color: var(--blnco);
+font-size: 15px;
+line-height: 1.5;
+width: 100%;
+max-width: 220px;    
+margin: auto;
+
+}
+#seccion4{
+height: auto;
+}
+
+.vid {
+position: relative;
+background-color: #000;
+height: 75vh;
+min-height: 25rem;
+width: 100%;
+overflow: hidden;
+color: var(--blnco);
+}
+header .overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #000;
+opacity: 0.5;
+z-index: 1;
+}
+header video {
+position: absolute;    
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+}
+
+header .container {
+position: relative;
+z-index: 2;
+}
+#what-app{
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+color: white;
+transition:all 500ms ease-out;
+}
+#what-app:hover {
+color: green;
+border: solid 1px green;
+}
+footer{
+height: auto;
+width: 100%;
+background-color: var(--fuerte);
+}
+.continer-footer{
+display: flex;
+margin-left: 50px;
+
+}
+
+.continer-footer .div-footer{
+margin-left: 50px;
+margin-top: 50px;
+height: 150px;
+width: 150px;
+}
+
+.div-footer a{
+text-decoration: none;
+color: var(--blnco);
+}
+.div-footer a:hover{
+color:var(--suave);
+}
+.div-footer img{
+visibility: hidden;
+width: 90%;
+}
+.div-footer:hover >img{
+visibility: visible;
+}
+.cursos{    
+background-color: white;
+width: 15%;
+height: 170px;
+font-size: 20px;
+margin-left: 50px;
+margin-top: 20px;
+border-radius: 50px 50px 50px 50px;    
+background: transparent;
+color: var(--fuerte);
+cursor: pointer;
+transition:all 500ms ease-out;
+}
+
+.cursos:hover{
+border: 1px solid var(--suave);
+color: var(--suave);
+box-shadow: 0px 10px 15px var(--suave);
+}
+.strings{
+
+padding-left:10%;       
+padding-top:10%;       
+}
+
+#mail{
+    color: #040e25;
+}
+
+.continer-footer :hover #mail {
+    color: white;
+}
+/*responsive */
+
+@media only screen and (max-width: 1220px) {
+.cursos{    
+    
+    width: 15%;
+    height: 150px;        
+    transition:all 500ms ease-out;
+}
+
+
+.strings{
+    font-size: 12px !important;
+}
+}
+
+@media only screen and (max-width: 768px) {
+#continer-proyectos{
+    flex-direction:column; 
+}
+
+#continer-proyectos figure .capa h3{
+    font-size: 16px;
+}
+
+.continer h1{        
+    margin-left: 15%;        
+}
+
+.continer-footer .div-footer{
+    margin-left: 30px;
+    width: 100px;
+}
+
+}
+
+@media only screen and (max-width: 668px) {
+#seccion2{
+    background-color:var(--fuerte);
+    height: 500px;
+}
+
+#card-sobremi{
+    position: absolute;
+    margin-left: 7%;
+    width: 80%;     
+    margin-top: 30px;
+    background-color: rgba(255, 211, 255, 0);    
+    border-radius: 23% 8% !important;
+    border-color: var(--suave);
+    
+}
+#card-sobremi p{
+    color: var(--blnco);
+    text-align: justify;
+}
+
+#card-sobremi h5{
+    color: var(--blnco);
+    text-align: center;
+    
+}
+#seccion2 .card img{
+    width: 35%;
+    
+}
+.tecnologias{
+    width: 8% !important;
+    height: 8%;
+    
+}
+
+#continer-proyectos figure{        
+    height: 250px;
+    width: 300px;        
+}
+.cursos{
+    visibility: hidden;
+}
+
+.div-footer img{       
+    width: 100px
+}
+
+.menu{       
+    margin-bottom: 15%;
+    background: var(--fuerte);
+}
+
+
+.menu-into{
+    display: flex;
+    margin-top: 1%;
+    margin-left: -160%;    
+}
+.menu nav ul {
+flex-direction: column;
+justify-content: start;    
+position: absolute;
+background-color: var(--fuerte);
+width: 108%;
+}
+
+.menu nav ul li a{
+    color: var(--blnco);
+}
+
+.menu nav ul li:hover {
+    background-color: var(--blnco);
+    
+}
+
+.menu nav ul li:hover a{
+    color: var(--fuerte);
+}
+
+.menu label {
+    display: block;
+    background-color: var(--fuerte);
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.menu label img {
+width: 30px;
+height: 30px;       
+}
+
+#btn-menu:checked ~ .menu-into{
+    margin-left: -51%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+.parallax{    
+background-size: 1400px;
+}
+}
+
+
+
+
+
+
