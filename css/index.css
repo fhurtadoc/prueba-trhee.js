@@ -8,7 +8,18 @@
      --efectos-color2:#3e94e4 ;
   }
   
-
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
 
 .container{
     position: absolute;
@@ -81,10 +92,11 @@
 
 .container h1 {
     color: var(--efectos-color1);
-    font-size: 400%;
+    font-size: 500%;
     font-family: serif;
     mix-blend-mode: multiply;
     background: linear-gradient(#3e94e4, #040e25);
+    -webkit-text-stroke: 2px white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
